@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trener personalny</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="main" id="main">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand  m-0 mr-5 p-0" href="#"><img src="dumbbell.svg" class="dumbbell"
+                        alt="">GYMFIT</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutme">O mnie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#offer">Oferta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Opinie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#map">Mapa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#social">Sociale</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </section>
+    <section id="video">
+        <div id="hero">
+            <video loop muted autoplay poster="">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+
+            <div id="videotext" class="content d-flex align-items-center">
+                <div class="container text-center ">
+                    <h1>Trenujesz i nie widzisz efektów?</h1>
+                    <hr />
+                    <h3>Skorzystaj z mojej pomocy</h3>
+                    <a href="#offer"><button id="checkoffer" class="btn btn-dark mt-3">Sprawdź oferte</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="aboutme">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="col-12 text-center mb-5">
+                    <h2>O mnie</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 text-center d-flex align-items-center">
+                        <img class="aboutmepicture" src="coach.svg" alt="">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <p class="lead">Mam na imię Adrian. Obecnie pracuję jako trener personalny w klubie Fabryka
+                            Formy Bałtyk w Poznaniu. Trener personalny to mój zawód już od 2006 roku. By go wykonywać,
+                            ukończyłem profesjonalny kurs instruktorski ze specjalizacją fitness – sporty siłowe –
+                            kulturystyka
+                            (TKKF – Poznań)</p>
+                    </div>
+                    <div class="col-sm-12 col-md-3 text-center d-flex align-items-center">
+                        <img class="aboutmepicture" src="personal.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offer">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="col-12 text-center mb-5">
+                <h2>Oferta</h2>
+            </div>
+
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="accordion col-md-12 col-xl-4" id="firstaccordion">
+                        <div class="card">
+                            <div class="card-header text-center" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div>
+                                            <img class="acordionimage" src="bench-press.svg" alt="">
+                                        </div>
+                                        TRENING FUNKCJONALNY
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Trening funkcjonalny harmonijnie wzmacnia mięśnie całego ciała i symetryzuje je.
+                                    Wielką zaletą jego jest to, iż aktywuje wszystkie rodzaje włókien mięśniowych,
+                                    mięśnie głębokie oraz posturalne, odpowiadające za prawidłową postawę oraz za
+                                    zdrowie kręgosłupa.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion col-md-12 col-xl-4" id="secondaccordion">
+                        <div class="card">
+                            <div class="card-header text-center" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                        <div>
+                                            <img class="acordionimage" src="diet.svg" alt="">
+                                        </div>
+                                        BUDOWA MASY I SIŁY MIĘŚNIOWEJ
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Jednym ze sposobów służącym zwiększeniu siły i wydolności organizmu jest trening
+                                    siłowy. Ćwiczenia siłowe przyspieszają metabolizm, pomagają spalać tłuszcz kiedy nie
+                                    ćwiczysz. Ćwicząc zarówno z kobietami jak i z mężczyznami zarażam ich miłością do
+                                    treningu z obciążeniem.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion col-md-12 col-xl-4" id="third">
+                        <div class="card">
+                            <div class="card-header text-center" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                        <div>
+                                            <img class="acordionimage" src="empowerment.svg" alt="">
+                                        </div>
+                                        WZMOCNIENIE I WYTRZYMAŁOŚĆ
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Trening, który pomoże Ci poprawić siłę, kondycję, wydolność i szybkości w krótkim
+                                    czasie. Jednym z rodzai tego treningu jest trening TRX, który pozwala na wykonanie
+                                    ponad 300 ćwiczeń górnych i dolnych części ciała. Każde z nich można stopniować w
+                                    zależności od Twojego poziomu sprawności. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <section id="reviews">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="col-12 text-center mb-5">
+                <h2>Opinie</h2>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Ocena:
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                </h6>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Trener z pasją! do każdego podopiecznego podchodzi indywidualnie!
+                                        Mega
+                                        Motywator! Nie ma u niego słowa 'niemożliwe'. Widziałem na własne oczy jak
+                                        podopieczni się zmieniają. Dzięki Adrian za wskazówki i rady dzięki którym jest
+                                        forma!</p>
+                                    <footer class="blockquote-footer">Bartosz Walaszek</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Ocena:
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                </h6>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Miałem przyjemność trenować z Adrianem, daje niezły wycisk! Super
+                                        człowiek, motywator. Najlepszy! Polecam 100%! Zna się na tym jak mało kto i
+                                        kocha to
+                                        co robi! 👏</p>
+                                    <footer class="blockquote-footer">Wojciech Puczyk</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Ocena:
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                </h6>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Sam jestem trenerem personalnym i miałem ogromną przyjemność
+                                        trenowania z Adrianem oraz wymianę doświadczeń. Jest to prawdziwy
+                                        profesjonalista oraz pasjonat kształtowania sylwetki. Absolutnie można mu
+                                        zaufać. Chcę mieć taką moc jak Maciej Łukomski! Piona Byku!</p>
+                                    <footer class="blockquote-footer">Adrian Puchacki</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Ocena:
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                </h6>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Adrian to profesjonalista w każdym calu,który do swojej pracy
+                                        przykłada się w 100%! Możliwość połączenia pracy z takim trenerem i dietą
+                                        gwarantuje wspaniałe i widoczne efekty, dlatego polecam każdemu kto jeszcze się
+                                        zastanawia!</p>
+                                    <footer class="blockquote-footer">Marianna Banan</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Ocena:
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                </h6>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Trener Adrian Nowak to człowiek o wielkim sercu i zapale do pracy!
+                                        Idealna osoba na odpowiednim miejscu! Od Poznania jego rady co do treningów i
+                                        diety podążają za mną aż do stolicy!</p>
+                                    <footer class="blockquote-footer">Katarzyna Smark</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Ocena:
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="star.svg" alt="">
+                                </h6>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Adrian jest profesjonalnym, wymagającym, a przede wszystkim trenerem
+                                        z pasją i świetnym podejściem do ludzi!</p>
+                                    <footer class="blockquote-footer">Pawel Psikuta</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <section id="contact">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="col-12 text-center mb-5">
+                    <h2>Kontakt</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xl-6">
+                        <div class="card">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Imie i nazwisko</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1"
+                                        placeholder="Jan Kowalski" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Adres email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="wpisz@email.com" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="textarea">Wiadomość</label>
+                                    <div>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                            required></textarea>
+                                    </div>
+
+                                </div>
+                                <button type="submit" class="btn btn-dark">Wyslij</button>
+                            </form>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12 col-xl-6">
+                        <div class="card">
+                            <img id="phonepicture" src="call.svg" alt="">
+                            <h3 class="text-center">
+                                Zadzwoń i umów się na trening
+                            </h3>
+                            <h3 class="text-center">
+                                601-016-616
+                            </h3>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+
+    <section id="map">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="col-12 text-center mb-5">
+                    <h2>Mapa</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="map-responsive">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2434.688054751556!2d16.919457715535327!3d52.39420507979065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b242fdeb9f1%3A0xa54e69916a349006!2sWierzbi%C4%99cice%2044%2C%2061-568%20Pozna%C5%84!5e0!3m2!1spl!2spl!4v1607079077904!5m2!1spl!2spl"
+                                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                                    aria-hidden="false" tabindex="0"></iframe>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+    </section>
+
+    <section id="social">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="col-12 text-center mb-5">
+                <h2>Sociale</h2>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                               <a href="http://facebook.com"><img src="facebook.svg" alt=""></a> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <a href="http://instagram.com"><img src="instagram.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-xl-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <a href="http://twitter.com"><img src="twitter.svg" alt=""></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; Adrian Nowak 2020</p>
+        </div>
+        <a href="#main"><img src="upwards.svg" alt=""></a>
+    </footer>
+    
+</body>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
