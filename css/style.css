@@ -1,11 +1,15 @@
 
+body,html{
+    height:100%
+}
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     background-color: black;
     font-family: 'Lato', sans-serif !important;
 }
-
-
 
 .navbar-dark .navbar-toggler{
     border: none;
@@ -60,6 +64,13 @@ body{
                  0 10px 10px rgba(0, 0, 0, 0.5),
                  0 -10px 10px rgba(0, 0, 0, 0.5);
 }
+
+#hero h1{
+    font-size:4vh;
+}
+#hero h3{
+    font-size:3vh;
+}
 #checkoffer{
     text-transform: uppercase;
     box-shadow: 0px 0px 50px rgb(77, 76, 76);
@@ -98,7 +109,7 @@ body{
 }
 
 hr {
-	width: 400px;
+	width: 500px;
 	border-top: 1px solid #f8f8f8;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
 }
@@ -141,7 +152,8 @@ hr {
     width: 70%;
     height: auto;
     margin: 0 auto;
-    
+    padding:0;
+      
 }
 .card{
     background:none;
@@ -159,7 +171,7 @@ hr {
     0 -10px 10px rgba(0, 0, 0, 0.5);
 }
 .acordionimage{
-    max-height: 200px;
+    height:  200px;
     margin-bottom: 10px;
 }
 
@@ -253,10 +265,30 @@ blockquote footer{
     position:absolute;
 }
 
-#social img{
+#social img, #offer img{
     width: 50%;
 }
+.card{
+    transition: 0.5s;
+}
+#offer .card:hover, #social .card:hover, #offer1 .card .card:hover, #offer2 .card .card:hover, #offer3 .card .card:hover{
+    background: #333333b7;
+}
 
+#offer1 .card:hover, #offer2 .card:hover, #offer3 .card:hover{
+    background: none;
+}
+#offer1 .card .card{
+    height: 420px;
+}
+
+.tile-active{
+    background:#333333b7;
+}
+
+#reviews .card:hover{
+    background: #000000b7;
+}
 .site-footer{
     padding-top: 10px;
     border-top: 2px solid #5D5D5F;
@@ -271,6 +303,17 @@ footer img{
     z-index: 30;
 }
 
+#offer1 img, #offer2 img, #offer3 img{
+    width:20%;
+}
+#offer1 .card-body, #offer2 .card-body, #offer3 .card-body{
+   padding-bottom: 0;
+}
+.offer-card-header{
+    margin-top:5px;
+    text-transform: uppercase;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .aboutmepicture{
@@ -278,7 +321,12 @@ footer img{
 
     }
 
-    
+    #offer1 .card .card{
+        height: 500px;
+    }
+    #offer2 .card .card{
+        height: 370px;
+    }
     
 }
 
@@ -290,13 +338,26 @@ footer img{
     #reviews .card{
         height: 200px;
     }
+    #offer1 .card .card{
+        height: 500px;
+    }
+    
+    #offer2 .card .card{
+        height: 370px;
+    }
 }
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     #reviews .card{
-        height: 150px;
+        height: 280px;
+    }
+    #offer1 .card .card{
+        height: 620px;
+    }
+    #offer2 .card .card{
+        height: 450px;
     }
 }
     
@@ -304,8 +365,17 @@ footer img{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     #reviews .card{
-        height: 150px;
+        height: 230px;
     }
+    #offer1 .card .card{
+        height: 470px;
+    }
+    #offer2 .card .card{
+        height: 370px;
+    }
+    
+    
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

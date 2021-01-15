@@ -9,15 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <section class="main" id="main">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand  m-0 mr-5 p-0" href="#"><img src="dumbbell.svg" class="dumbbell"
+                <a class="navbar-brand  m-0 mr-5 p-0" href="#"><img src="img/dumbbell.svg" class="dumbbell"
                         alt="">GYMFIT</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,13 +45,13 @@
                     </ul>
                 </div>
             </div>
-
         </nav>
     </section>
+
     <section id="video">
         <div id="hero">
             <video loop muted autoplay poster="">
-                <source src="video.mp4" type="video/mp4">
+                <source src="media/video.mp4" type="video/mp4">
             </video>
 
             <div id="videotext" class="content d-flex align-items-center">
@@ -65,6 +64,7 @@
             </div>
         </div>
     </section>
+
     <section id="aboutme">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
@@ -72,8 +72,8 @@
                     <h2>O mnie</h2>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 col-md-3 text-center d-flex align-items-center">
-                        <img class="aboutmepicture" src="coach.svg" alt="">
+                    <div class="col-sm-12 col-md-3 text-center d-flex align-items-center p-0 m-0 ">
+                        <img class="aboutmepicture" src="img/coach.svg" alt="">
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <p class="lead">Mam na imię Adrian. Obecnie pracuję jako trener personalny w klubie Fabryka
@@ -82,8 +82,8 @@
                             kulturystyka
                             (TKKF – Poznań)</p>
                     </div>
-                    <div class="col-sm-12 col-md-3 text-center d-flex align-items-center">
-                        <img class="aboutmepicture" src="personal.svg" alt="">
+                    <div class="col-sm-0 col-md-3 text-center d-flex align-items-center p-0  m-0">
+                        <img class="aboutmepicture" src="img/personal.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -91,102 +91,402 @@
     </section>
 
     <section id="offer">
-
         <div class="jumbotron jumbotron-fluid">
             <div class="col-12 text-center mb-5">
                 <h2>Oferta</h2>
             </div>
 
             <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="accordion col-md-12 col-xl-4" id="firstaccordion">
-                        <div class="card">
-                            <div class="card-header text-center" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <div>
-                                            <img class="acordionimage" src="bench-press.svg" alt="">
-                                        </div>
-                                        TRENING FUNKCJONALNY
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Trening funkcjonalny harmonijnie wzmacnia mięśnie całego ciała i symetryzuje je.
-                                    Wielką zaletą jego jest to, iż aktywuje wszystkie rodzaje włókien mięśniowych,
-                                    mięśnie głębokie oraz posturalne, odpowiadające za prawidłową postawę oraz za
-                                    zdrowie kręgosłupa.
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4" id="firstaccordion">
+                            <div class="card text-center">
+                                <div class="card-body text-center">
+                                    <img src="img/bench-press.svg" alt="">
+                                    <div class="mt-2">TRENINGI</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="accordion col-md-12 col-xl-4" id="secondaccordion">
-                        <div class="card">
-                            <div class="card-header text-center" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                        <div>
-                                            <img class="acordionimage" src="diet.svg" alt="">
-                                        </div>
-                                        BUDOWA MASY I SIŁY MIĘŚNIOWEJ
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Jednym ze sposobów służącym zwiększeniu siły i wydolności organizmu jest trening
-                                    siłowy. Ćwiczenia siłowe przyspieszają metabolizm, pomagają spalać tłuszcz kiedy nie
-                                    ćwiczysz. Ćwicząc zarówno z kobietami jak i z mężczyznami zarażam ich miłością do
-                                    treningu z obciążeniem.
+                        <div class="col-4" id="secondaccordion">
+                            <div class="card text-center">
+                                <div class="card-body text-center">
+                                    <img src="img/diet.svg" alt="">
+                                    <div class="mt-2">DIETY</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="accordion col-md-12 col-xl-4" id="third">
-                        <div class="card">
-                            <div class="card-header text-center" id="headingOne">
-                                <h2 class="mb-0">
-                                    <button class="btn btn-link" type="button" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-                                        <div>
-                                            <img class="acordionimage" src="empowerment.svg" alt="">
-                                        </div>
-                                        WZMOCNIENIE I WYTRZYMAŁOŚĆ
-                                    </button>
-                                </h2>
-                            </div>
-
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingOne"
-                                data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Trening, który pomoże Ci poprawić siłę, kondycję, wydolność i szybkości w krótkim
-                                    czasie. Jednym z rodzai tego treningu jest trening TRX, który pozwala na wykonanie
-                                    ponad 300 ćwiczeń górnych i dolnych części ciała. Każde z nich można stopniować w
-                                    zależności od Twojego poziomu sprawności. </div>
+                        <div class="col-4" id="thirdaccordion">
+                            <div class="card text-center">
+                                <div class="card-body ">
+                                    <img src="img/dietary-suplement.svg" alt="">
+                                    <div class="mt-2">ODŻYWKI</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-12 d-none" id="offer1">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/gym.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Trening funkcjonalny
+                                                </div>
+                                                <div class="text-justify">
+                                                    Określenie trening funkcjonalny, jak sama nazwa wskazuje, pochodzi
+                                                    od słowa „funkcja”. A więc jest to trening poprawiający jakąś
+                                                    konkretną lub wiele funkcji motorycznych. Jego forma jest zawsze
+                                                    dopasowywana do potrzeb osoby trenującej, a nie realizowana według
+                                                    jakiegoś narzucanego schematu (np. treningu obwodowego,
+                                                    wykorzystania sprzętu typu kettlebells, bosu lub trx, czy
+                                                    wykonywania serii łączonych, jak zwykło się to ostatnio twierdzić w
+                                                    „pop kulturze fit”).
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/knee.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Wzmocnienie stawów
+                                                </div>
+                                                <div class="text-justify">
+                                                    Wiele osób zastanawia się, jak wykonywać ćwiczenia na kolana, kiedy
+                                                    pojawia się ból. Bardzo często przyczyna jego występowania nie jest
+                                                    jednoznacznie określona, badania usg nie wykazują nic niezwykłego, a
+                                                    lekarz diagnozuje przeciążenie stawu kolanowego, ale żadnych
+                                                    konkretów. Otóż przyczyn występowania bólu w kolanach, poza urazami
+                                                    mechanicznymi może być sporo.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/hospital.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Trening medyczny
+                                                </div>
+                                                <div class="text-justify">
+                                                    Trening medyczny jest to forma treningu specjalistycznego, będącego
+                                                    połączeniem fizjoterapii z treningiem funkcjonalnym, który w
+                                                    pierwszej kolejności skupia się na likwidacji funkcjonalnej
+                                                    dysfunkcji aparatu ruchu. Opiera się na badaniu i ocenie
+                                                    funkcjonalnej według ortopedycznych standardów, a kolejnie pracy
+                                                    indywidualnej z pacjentem/klientem pod kątem jego dolegliwości
+                                                    ortopedycznych, reumatologicznych, neurologicznych, metabolicznych,
+                                                    etc., wykorzystując metody fizjoterapeutyczne oraz ćwiczenia,
+                                                    dobrane według zasad profilaktyki przeciw i pourazowej.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/enterprise.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Trening dla firm
+                                                </div>
+                                                <div class="text-justify">
+                                                    Praca biurowa przyczynia się jednoznacznie do spędzania wielu godzin
+                                                    w pozycji siedzącej. Efektem są obolałe kręgosłupy, zwyrodnienia
+                                                    kręgów, cellulit, otłuszczenie w okolicach pośladków i bioder,
+                                                    żylaki, zaburzenia przepływu krwi, zawały. Oferta ta adresowana jest
+                                                    do osób prowadzących siedzący tryb życia. Polega na przeprowadzaniu
+                                                    zajęć w miejscu pracy np. w biurze, z nastawieniem na wykorzystanie
+                                                    środowiska pracy jako narzędzi treningowych, profilaktycznych i
+                                                    prehabilitacyjnych. Usługa realizowana jest w postaci pakietów,
+                                                    składających się z różnej ilości godzin.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/liposuction.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Trening odchudzający
+                                                </div>
+                                                <div class="text-justify">
+                                                    To forma treningu mająca na celu pozbycie się nadwagi i utrzymanie
+                                                    tego stanu rzeczy. Przed przystąpieniem do niego należy skonsultować
+                                                    się z lekarzem i w razie potrzeby wykonać serię niezbędnych badań
+                                                    (szczególnie osoby z dużą nadwagą, problemami z sercem, kręgosłupem,
+                                                    jakąkolwiek chorobą związaną z układem hormonalnym).Trening
+                                                    odchudzający jest dużo bardziej skomplikowanym procesem, niż mogłoby
+                                                    wydawać się na pierwszy rzut oka. Dzieje się tak z kilku przyczyn.
+                                                    Jedna z nich to zdolności adaptacyjne naszego organizmu.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/bodybuilding.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Trening na masę
+                                                </div>
+                                                <div class="text-justify">
+                                                    Praca biurowa przyczynia się jednoznacznie do spędzania wielu godzin
+                                                    w pozycji siedzącej. Efektem są obolałe kręgosłupy, zwyrodnienia
+                                                    kręgów, cellulit, otłuszczenie w okolicach pośladków i bioder,
+                                                    żylaki, zaburzenia przepływu krwi, zawały. Oferta ta adresowana jest
+                                                    do osób prowadzących siedzący tryb życia. Polega na przeprowadzaniu
+                                                    zajęć w miejscu pracy np. w biurze, z nastawieniem na wykorzystanie
+                                                    środowiska pracy jako narzędzi treningowych, profilaktycznych i
+                                                    prehabilitacyjnych. Usługa realizowana jest w postaci pakietów,
+                                                    składających się z różnej ilości godzin.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <h2 class="mb-5 offer-card-header">
+                                            CENNIK
+                                        </h2>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Usluga</th>
+                                                    <th scope="col">Kwota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Trening funkcjonalny</td>
+                                                    <td>1000 zł/mc</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Wzmocnienie stawów</td>
+                                                    <td>1000 zł/mc</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trening medyczny</td>
+                                                    <td>1500 zł/mc</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trening dla firm</td>
+                                                    <td>5000 zł/mc 20 osob</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trening odchudzajacy</td>
+                                                    <td>5000 zł/mc</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Trening na masę</td>
+                                                    <td>100 zł/dzień</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-none" id="offer2">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/sportsman.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Dieta sportowca
+                                                </div>
+                                                <div class="text-justify">
+                                                    Dieta sportowca trenującego na siłowni jest najważniejszym wsparciem
+                                                    dla jego treningów siłowych i gwarantem osiągnięcia wcześniej
+                                                    wyznaczonego celu. Opracowanie jej wymaga odpowiedniej wiedzy i
+                                                    uzależnione jest od aktualnych warunków fizycznych sportowca, jego
+                                                    predyspozycji i, co najważniejsze, od aktualnego poziomu jego tkanki
+                                                    tłuszczowej.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/waist.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Dieta odchudzająca
+                                                </div>
+                                                <div class="text-justify">
+                                                    Próbujesz się odchudzać ale żadna dieta nie działa? Być może
+                                                    nieświadomie podczas odchudzania popełniasz błędy. Prawidłowe
+                                                    odchudzanie to proces wieloetapowy i rozłożony w czasie. Zdrowa,
+                                                    zbilansowana dieta odchudzająca w połączeniu z aktywnością fizyczną
+                                                    może zdziałać cuda.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/miracle.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Dieta CUD
+                                                </div>
+                                                <div class="text-justify">
+                                                    Dieta cud to sposób żywienia, który może być stosowany wielokrotnie.
+                                                    Wymaga całkowitej rezygnacji z pieczywa, alkoholu (nawet kieliszka
+                                                    wina, piwa czy wódki). Zabronione jest także picie wody gazowanej i
+                                                    słodzonych napojów gazowych.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/lunges.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Dieta fitness
+                                                </div>
+                                                <div class="text-justify">
+                                                    Dieta fitnesski musi zawierać konkretną ilość kalorii i składników
+                                                    odżywczych. Regularne zajęcia fitness zapewnią modelowanie sylwetki,
+                                                    odchudzanie i poprawę kondycji pod warunkiem, że dieta będzie
+                                                    odpowiednio skomponowana do tego wysiłku.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <h2 class="mb-5 offer-card-header">
+                                            CENNIK
+                                        </h2>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Usluga</th>
+                                                    <th scope="col">Kwota</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Dieta sportowca</td>
+                                                    <td>200 zł/mc</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dieta odchudzająca</td>
+                                                    <td>250 zł/mc</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dieta cud</td>
+                                                    <td>200 zł/mc</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Dieta fitness</td>
+                                                    <td>200 zł/mc</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-none" id="offer3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/whey.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Białko
+                                                </div>
+                                                <button class="btn btn-success button-buy">KUP TERAZ!</button>
+                                                <footer class="footer mb-5">200zł / 500g</footer>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-center">
+                                                <img src="img/vitamins.svg" alt="">
+                                                <div class="mb-5 offer-card-header">
+                                                    Komplex witamin
+                                                </div>
+                                                <button class="btn btn-success button-buy">KUP TERAZ!</button>
+                                                <footer class="footer mb-5">150zł / 200g</footer>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
         </div>
-
     </section>
 
     <section id="reviews">
-
         <div class="jumbotron jumbotron-fluid">
             <div class="col-12 text-center mb-5">
                 <h2>Opinie</h2>
@@ -194,15 +494,15 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-xl-4">
+                    <div class="col-md-6 col-xl-4">
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-2">Ocena:
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
                                 </h6>
                                 <blockquote class="blockquote">
                                     <p class="mb-0">Trener z pasją! do każdego podopiecznego podchodzi indywidualnie!
@@ -216,16 +516,15 @@
                         </div>
                     </div>
 
-
-                    <div class="col-md-12 col-xl-4">
+                    <div class="col-md-6 col-xl-4">
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-2">Ocena:
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
                                 </h6>
                                 <blockquote class="blockquote">
                                     <p class="mb-0">Miałem przyjemność trenować z Adrianem, daje niezły wycisk! Super
@@ -238,15 +537,15 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 col-xl-4">
+                    <div class="col-md-6 col-xl-4">
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-2">Ocena:
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
                                 </h6>
                                 <blockquote class="blockquote">
                                     <p class="mb-0">Sam jestem trenerem personalnym i miałem ogromną przyjemność
@@ -259,15 +558,15 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 col-xl-4">
+                    <div class="col-md-6 col-xl-4">
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-2">Ocena:
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
                                 </h6>
                                 <blockquote class="blockquote">
                                     <p class="mb-0">Adrian to profesjonalista w każdym calu,który do swojej pracy
@@ -280,15 +579,15 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 col-xl-4">
+                    <div class="col-md-6 col-xl-4">
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-2">Ocena:
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
                                 </h6>
                                 <blockquote class="blockquote">
                                     <p class="mb-0">Trener Adrian Nowak to człowiek o wielkim sercu i zapale do pracy!
@@ -300,15 +599,15 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12 col-xl-4">
+                    <div class="col-md-6 col-xl-4">
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="card-subtitle mb-2">Ocena:
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
-                                    <img class="star" src="star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
+                                    <img class="star" src="img/star.svg" alt="">
                                 </h6>
                                 <blockquote class="blockquote">
                                     <p class="mb-0">Adrian jest profesjonalnym, wymagającym, a przede wszystkim trenerem
@@ -321,7 +620,6 @@
 
                 </div>
             </div>
-
     </section>
 
     <section id="contact">
@@ -353,7 +651,7 @@
                                     </div>
 
                                 </div>
-                                <button type="submit" class="btn btn-dark">Wyslij</button>
+                                <button id="message" type="submit" class="btn btn-dark">Wyslij</button>
                             </form>
                         </div>
 
@@ -361,7 +659,7 @@
 
                     <div class="col-md-12 col-xl-6">
                         <div class="card">
-                            <img id="phonepicture" src="call.svg" alt="">
+                            <img id="phonepicture" src="img/call.svg" alt="">
                             <h3 class="text-center">
                                 Zadzwoń i umów się na trening
                             </h3>
@@ -388,7 +686,7 @@
                 <div class="col-12 text-center mb-5">
                     <h2>Mapa</h2>
                 </div>
-                <div class="row">
+                <d iv class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="map-responsive">
@@ -404,7 +702,7 @@
 
                     </div>
 
-                </div>
+            </div>
 
     </section>
 
@@ -416,30 +714,30 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 col-xl-4">
+                    <div class="col-4 col-xl-4">
                         <div class="card">
                             <div class="card-body text-center">
-                               <a href="http://facebook.com"><img src="facebook.svg" alt=""></a> 
+                                <a href="http://facebook.com"><img src="img/facebook.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-xl-4">
+                    <div class="col-4 col-xl-4">
                         <div class="card">
                             <div class="card-body text-center">
-                                <a href="http://instagram.com"><img src="instagram.svg" alt=""></a>
+                                <a href="http://instagram.com"><img src="img/instagram.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-12 col-xl-4">
+                    <div class="col-4 col-xl-4">
                         <div class="card">
                             <div class="card-body text-center">
-                                <a href="http://twitter.com"><img src="twitter.svg" alt=""></a>
+                                <a href="http://twitter.com"><img src="img/twitter.svg" alt=""></a>
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
     </section>
 
 
@@ -447,20 +745,19 @@
         <div class="container">
             <p>&copy; Adrian Nowak 2020</p>
         </div>
-        <a href="#main"><img src="upwards.svg" alt=""></a>
+        <a href="#main"><img src="img/upwards.svg" alt=""></a>
     </footer>
-    
+
 </body>
 
-<script src="script.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 
 </html>
